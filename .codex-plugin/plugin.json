@@ -1,0 +1,13 @@
+{
+  "name": "usual-powers",
+  "version": "0.1.0",
+  "description": "A cross-platform collection of reusable agent skills.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Usual Powers",
+    "shortDescription": "Reusable workflows for coding agents",
+    "defaultPrompt": [
+      "Help me apply the relevant usual-powers skill to this task."
+    ]
+  }
+}

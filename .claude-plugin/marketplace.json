@@ -1,0 +1,15 @@
+{
+  "name": "usual-powers-marketplace",
+  "description": "Marketplace for the usual-powers skills collection.",
+  "owner": {
+    "name": "usual-powers"
+  },
+  "plugins": [
+    {
+      "name": "usual-powers",
+      "description": "A cross-platform collection of reusable agent skills.",
+      "version": "0.1.0",
+      "source": "./"
+    }
+  ]
+}
