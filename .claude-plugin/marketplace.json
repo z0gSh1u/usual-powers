@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "usual-powers",
-      "description": "A cross-platform collection of reusable agent skills.",
+      "description": "A collection of reusable agent skills.",
       "version": "0.1.0",
       "source": "./"
     }

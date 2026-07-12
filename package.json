@@ -1,7 +1,7 @@
 {
   "name": "usual-powers",
   "version": "0.1.0",
-  "description": "A cross-platform collection of reusable agent skills.",
+  "description": "A collection of reusable agent skills.",
   "type": "module",
   "main": ".opencode/plugins/usual-powers.js",
   "keywords": [
