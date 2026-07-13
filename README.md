@@ -30,6 +30,7 @@
 - `know-how`：探究当前代码库中的功能或技术机制，追踪实现链路并基于证据说明其工作方式。
 - `check-before-pr`：在创建或更新 PR 前运行所有相关验证命令，并合理修复可解决的问题。
 - `commit-unstaged`：提交所有 unstaged 改动，必要时按逻辑拆分为多个 commit。
+- `refactor-codebase`：在保持行为不变的前提下，移除死代码并现代化遗留模式；来源于 [ChatGPT use case: Refactor your codebase](https://learn.chatgpt.com/use-cases/refactor-your-codebase)。
 
 ## 迁移的其他 Skills
 

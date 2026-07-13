@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactor Codebase"
+  short_description: "Modernize code without changing behavior"
+  default_prompt: "Use $refactor-codebase to propose a safe, reviewable modernization plan for this codebase."
