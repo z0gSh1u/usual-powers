@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagnosing Bugs"
+  short_description: "Diagnose bugs with tight feedback loops"
+  default_prompt: "Diagnose this bug by building a tight reproduction loop, testing hypotheses, fixing it, and adding regression coverage."

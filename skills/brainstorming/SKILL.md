@@ -31,7 +31,12 @@ has approved it.
 ## Conversation Rules
 
 - Start with context, then ask one question per message.
-- Prefer choices when they make the decision easier, but allow open-ended input.
+- Before asking, prioritize decisions that affect architecture, scope, interfaces,
+  behavior, or acceptance criteria; inspect the repository or follow existing
+  conventions for facts that can be determined without asking.
+- Give a recommended answer first, explain its main trade-off, then ask the user
+  to confirm it or choose an alternative. Allow open-ended input when choices
+  would constrain the decision prematurely.
 - Follow existing project patterns and avoid unrelated refactoring.
 - Remove unrequested features and over-engineering.
 - Cover architecture, components, data flow, error handling, and testing only

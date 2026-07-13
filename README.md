@@ -30,3 +30,19 @@
 - `know-how`：探究当前代码库中的功能或技术机制，追踪实现链路并基于证据说明其工作方式。
 - `check-before-pr`：在创建或更新 PR 前运行所有相关验证命令，并合理修复可解决的问题。
 - `commit-unstaged`：提交所有 unstaged 改动，必要时按逻辑拆分为多个 commit。
+
+## 迁移的其他 Skills
+
+- `diagnosing-bugs`：通过紧反馈循环、最小复现、假设验证和回归测试，系统诊断困难 Bug 与性能问题；已移除对 `CONTEXT.md`、ADR 和其他架构 Skill 的依赖。
+
+## 基于 mattpocock/skills 的迁移说明
+
+本仓库参考 [mattpocock/skills](https://github.com/mattpocock/skills)，只迁移了 `diagnosing-bugs`，没有完整引入其工程工作流体系。
+
+- 保留上游的六阶段诊断流程：建立紧反馈循环、复现与最小化、提出假设、定向插桩、修复与回归测试、清理与复盘。
+- 保留可选的 `scripts/hitl-loop.template.sh`，仅用于无法自动化、必须由人工操作的复现步骤。
+- 移除对 `CONTEXT.md`、ADR 和 `improve-codebase-architecture` 的依赖，不要求目标项目安装额外 Skill 或维护特定项目文档。
+- 按本仓库的跨平台约定放入根目录 `skills/`，由 Claude Code、Codex 和 OpenCode 的现有适配层统一发现。
+- `resolve-conflicts` 借鉴其 `resolving-merge-conflicts` 的意图分析原则：逐个冲突点读取双方对应的 commit message 或 PR，兼容时保留双方意图，不兼容时不发明新行为并记录取舍；没有照搬其自动完成 merge/rebase 和提交的策略。
+- `brainstorming` 借鉴其 `grill-me` 的提问方法：优先追问影响架构、范围、接口、行为和验收标准的关键决策；每次提问先给出推荐方案和主要取舍，再请用户确认；没有引入独立的 `grill-me`/`grill-with-docs` 流程。
+- 上游内容按 MIT License 迁移，版权归属见根目录 [LICENSE](LICENSE)。

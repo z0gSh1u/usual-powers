@@ -14,7 +14,7 @@ description: Resolve existing Git merge conflicts by understanding the intent be
    - `git status --short`
    - `git diff --name-only --diff-filter=U`
    - the relevant merge, rebase, or cherry-pick metadata and commit history.
-3. For every conflicted file, read the surrounding code and compare both sides. Do not blindly choose `ours` or `theirs`; their meaning can differ during a rebase. Check callers, related files, recent commits, and tests when they clarify intent.
+3. For every conflict point, first read the commit message or PR corresponding to each side's change when available, so you understand the background. When the changes are compatible, preserve both sides' intent; when they are incompatible, do not invent new behavior and record the trade-off. Read the surrounding code and compare both sides. Do not blindly choose `ours` or `theirs`; their meaning can differ during a rebase. Check callers, related files, recent commits, and tests when they clarify intent.
 4. Resolve conflicts by preserving both changes when they are compatible. When they are not, choose the behavior that fits the current architecture, the intended change on each side, the supplied background, and existing tests. Keep imports, types, APIs, configuration, and generated artifacts coherent.
 5. Remove all conflict markers and stage each resolved file only when its contents are correct. Do not commit or continue the merge/rebase/cherry-pick unless the user explicitly asks for that.
 6. Validate the result:
