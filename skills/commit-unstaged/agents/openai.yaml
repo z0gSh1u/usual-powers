@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Unstaged"
+  short_description: "Commit unstaged changes in logical groups"
+  default_prompt: "Commit all unstaged changes, splitting them into logical commits when needed."

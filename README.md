@@ -28,3 +28,5 @@
 
 - `resolve-conflicts`：结合冲突双方的修改目的和用户补充背景，解决 Git merge、rebase 或 cherry-pick 中的现有冲突，并完成针对性验证。
 - `know-how`：探究当前代码库中的功能或技术机制，追踪实现链路并基于证据说明其工作方式。
+- `check-before-pr`：在创建或更新 PR 前运行所有相关验证命令，并合理修复可解决的问题。
+- `commit-unstaged`：提交所有 unstaged 改动，必要时按逻辑拆分为多个 commit。
